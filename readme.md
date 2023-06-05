@@ -8,6 +8,7 @@
 
 ## Implementations
 
+- JWT with Public Key Rotation
 - Rest
 - GRPC
 - Events
