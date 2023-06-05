@@ -1,0 +1,78 @@
+{
+  "apiVersion": "v1",
+  "appName": "product",
+  "listenPort": ":5400",
+  "secondsToReloadServicesName": 15,
+  "folders": [
+    "certs"
+  ],
+  "certificates": {
+    "foldername": "certs",
+    "filenamecert": "localhost.crt",
+    "filenamekey": "localhost.key",
+    "passwordPermissionEndPoint": "6L8awtp6@wi0QeD@*xym",
+    "serviceName":"authentication",
+    "apiPathCertificateCA": "api/v1/download/cacert",
+    "apiPathCertificateHost": "api/v1/download/cert",
+    "apiPathCertificateHostKey": "api/v1/download/cert-key",
+    "minutesToReloadCertificate": 1
+  },
+  "token": {
+    "issuer": "www.mymicroservices.com",
+    "minutesToExpireToken": 15,
+    "hoursToExpireRefreshToken": 1
+  },
+  "securityKeys": {
+    "minutesToRefreshPublicKeys": 15,
+    "serviceName":"authentication",
+    "apiPathPublicKeys": "api/v1/jwks"
+  },
+  "jaeger": {
+    "jaegerEndpoint": "http://localhost:14268/api/traces",
+    "serviceName": "product",
+    "serviceVersion": "1.0.0"
+  },
+  "mongoDbExporter": {
+    "password": "mongodb",
+    "user": "mongodb_exporter"
+  },
+  "mongodb": {
+    "database": "products",
+    "host": "localhost",
+    "user": "mongo",
+    "password": "mongo",
+    "maxPoolSize": 50,
+    "port": "27017"
+  },
+  "nats": {
+    "clientId": "product",
+    "clusterId": "microservice",
+    "connectWait": 30,
+    "interval": 10,
+    "maxOut": 5,
+    "pubAckWait": 30,
+    "url": "nats://localhost:4222"
+  },
+  "prometheus": {
+    "prometheus_pushgateway": "http://localhost:9091/"
+  },
+  "emailService": {
+    "serviceName":"email"
+  },
+  "postgres": {
+    "host": "localhost",
+    "port": "5432",
+    "user": "postgres",
+    "password": "postgres",
+    "database": "products",
+    "sslMode": "disable"
+  },
+  "redis": {
+    "addr": "localhost:6379",    
+    "db": 0,
+    "poolSize": 300
+  },
+  "consul": {
+    "host": "localhost:8500"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "apiVersion": "v1",
+  "appName": "product",
+  "listenPort": ":5400",
+  "kubernetesServiceNameSuffix": "svc",
+  "secondsToReloadServicesName": 15,
+  "folders": [
+    "certs"
+  ],
+  "certificates": {
+    "foldername": "certs",
+    "filenamecert": "localhost.crt",
+    "filenamekey": "localhost.key",    
+    "serviceName":"authentication",
+    "apiPathCertificateCA": "api/v1/download/cacert",
+    "apiPathCertificateHost": "api/v1/download/cert",
+    "apiPathCertificateHostKey": "api/v1/download/cert-key",
+    "minutesToReloadCertificate": 1
+  },
+  "token": {
+    "issuer": "www.mymicroservices.com",
+    "minutesToExpireToken": 15,
+    "hoursToExpireRefreshToken": 1
+  },
+  "securityKeys": {
+    "minutesToRefreshPublicKeys": 15,
+    "serviceName":"authentication",
+    "apiPathPublicKeys": "api/v1/jwks"
+  },
+  "jaeger": {
+    "jaegerEndpoint": "http://jaeger-collector-svc:14268/api/traces",
+    "serviceName": "product",
+    "serviceVersion": "1.0.0"
+  },
+  "mongodb": {
+    "database": "products",
+    "host": "mongodb-server-svc",
+    "maxPoolSize": 50,
+    "port": "27017"
+  },
+  "nats": {
+    "clientId": "product",
+    "clusterId": "microservice",
+    "connectWait": 30,
+    "interval": 10,
+    "maxOut": 5,
+    "pubAckWait": 30,
+    "url": "nats://nats-streaming-svc:4222"
+  },
+  "emailService": {
+    "serviceName":"email"
+  },
+  "postgres": {
+    "host": "postgres-server-svc",
+    "port": "5432",
+    "database": "products",
+    "sslMode": "disable"
+  },
+  "redis": {
+    "addr": "redis-server-svc:6379",
+    "db": 0,
+    "poolSize": 300
+  },
+  "consul": {
+    "host": "consul-svc:8500"
+  }
+}
