@@ -15,9 +15,9 @@ import (
 	"product/src/validators"
 	"time"
 
+	common_validator "github.com/JohnSalazar/microservices-go-common/validators"
 	"github.com/goccy/go-json"
 	"github.com/google/uuid"
-	common_validator "github.com/oceano-dev/microservices-go-common/validators"
 )
 
 type ProductCommandHandler struct {

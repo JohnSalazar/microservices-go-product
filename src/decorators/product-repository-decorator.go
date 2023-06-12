@@ -11,9 +11,9 @@ import (
 
 	command_product "product/src/application/commands/product"
 
+	common_nats "github.com/JohnSalazar/microservices-go-common/nats"
+	trace "github.com/JohnSalazar/microservices-go-common/trace/otel"
 	"github.com/google/uuid"
-	common_nats "github.com/oceano-dev/microservices-go-common/nats"
-	trace "github.com/oceano-dev/microservices-go-common/trace/otel"
 )
 
 type ProductRepositoryDecorator interface {

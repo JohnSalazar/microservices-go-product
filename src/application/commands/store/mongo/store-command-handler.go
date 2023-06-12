@@ -10,7 +10,7 @@ import (
 	"product/src/data/repositories/interfaces"
 	"time"
 
-	common_validator "github.com/oceano-dev/microservices-go-common/validators"
+	common_validator "github.com/JohnSalazar/microservices-go-common/validators"
 )
 
 type StoreCommandHandler struct {

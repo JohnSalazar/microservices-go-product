@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/oceano-dev/microservices-go-common/config"
+	"github.com/JohnSalazar/microservices-go-common/config"
 )
 
 func NewPostgresDatabase(config *config.Config) (*sql.DB, error) {

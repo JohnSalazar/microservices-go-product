@@ -21,24 +21,24 @@ import (
 	postgres_repository "product/src/data/repositories/postgres"
 	redis_repository "product/src/data/repositories/redis"
 
+	"github.com/JohnSalazar/microservices-go-common/config"
+	common_grpc_client "github.com/JohnSalazar/microservices-go-common/grpc/email/client"
+	"github.com/JohnSalazar/microservices-go-common/helpers"
+	"github.com/JohnSalazar/microservices-go-common/httputil"
+	"github.com/JohnSalazar/microservices-go-common/middlewares"
 	"github.com/go-redis/redis/v8"
 	"github.com/nats-io/nats.go"
-	"github.com/oceano-dev/microservices-go-common/config"
-	common_grpc_client "github.com/oceano-dev/microservices-go-common/grpc/email/client"
-	"github.com/oceano-dev/microservices-go-common/helpers"
-	"github.com/oceano-dev/microservices-go-common/httputil"
-	"github.com/oceano-dev/microservices-go-common/middlewares"
 	"go.mongodb.org/mongo-driver/mongo"
 
-	common_log "github.com/oceano-dev/microservices-go-common/logs"
-	common_nats "github.com/oceano-dev/microservices-go-common/nats"
-	common_repositories "github.com/oceano-dev/microservices-go-common/repositories"
-	common_security "github.com/oceano-dev/microservices-go-common/security"
-	common_services "github.com/oceano-dev/microservices-go-common/services"
-	common_tasks "github.com/oceano-dev/microservices-go-common/tasks"
-	common_validator "github.com/oceano-dev/microservices-go-common/validators"
+	common_log "github.com/JohnSalazar/microservices-go-common/logs"
+	common_nats "github.com/JohnSalazar/microservices-go-common/nats"
+	common_repositories "github.com/JohnSalazar/microservices-go-common/repositories"
+	common_security "github.com/JohnSalazar/microservices-go-common/security"
+	common_services "github.com/JohnSalazar/microservices-go-common/services"
+	common_tasks "github.com/JohnSalazar/microservices-go-common/tasks"
+	common_validator "github.com/JohnSalazar/microservices-go-common/validators"
 
-	provider "github.com/oceano-dev/microservices-go-common/trace/otel/jaeger"
+	provider "github.com/JohnSalazar/microservices-go-common/trace/otel/jaeger"
 
 	migrate "product/src/migrations"
 
@@ -54,8 +54,8 @@ import (
 
 	seedProduct "product/src/seed"
 
+	common_consul "github.com/JohnSalazar/microservices-go-common/consul"
 	consul "github.com/hashicorp/consul/api"
-	common_consul "github.com/oceano-dev/microservices-go-common/consul"
 )
 
 type Main struct {

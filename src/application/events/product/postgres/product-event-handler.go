@@ -4,7 +4,7 @@ import (
 	"context"
 	"encoding/json"
 
-	common_nats "github.com/oceano-dev/microservices-go-common/nats"
+	common_nats "github.com/JohnSalazar/microservices-go-common/nats"
 
 	commandProduct "product/src/application/commands/product"
 	commandStore "product/src/application/commands/store"

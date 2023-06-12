@@ -6,7 +6,7 @@ import (
 
 	"github.com/google/uuid"
 
-	common_validator "github.com/oceano-dev/microservices-go-common/validators"
+	common_validator "github.com/JohnSalazar/microservices-go-common/validators"
 )
 
 type addStore struct {

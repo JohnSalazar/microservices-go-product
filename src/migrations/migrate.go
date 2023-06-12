@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/oceano-dev/microservices-go-common/config"
+	"github.com/JohnSalazar/microservices-go-common/config"
 
 	"github.com/golang-migrate/migrate/v4"
 	_ "github.com/golang-migrate/migrate/v4/database/postgres"

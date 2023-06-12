@@ -3,8 +3,8 @@ package redis_repository
 import (
 	"time"
 
+	"github.com/JohnSalazar/microservices-go-common/config"
 	"github.com/go-redis/redis/v8"
-	"github.com/oceano-dev/microservices-go-common/config"
 )
 
 func NewRedisClient(config *config.Config) *redis.Client {

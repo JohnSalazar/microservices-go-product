@@ -15,11 +15,11 @@ import (
 
 	"strings"
 
+	"github.com/JohnSalazar/microservices-go-common/httputil"
+	common_nats "github.com/JohnSalazar/microservices-go-common/nats"
+	trace "github.com/JohnSalazar/microservices-go-common/trace/otel"
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
-	"github.com/oceano-dev/microservices-go-common/httputil"
-	common_nats "github.com/oceano-dev/microservices-go-common/nats"
-	trace "github.com/oceano-dev/microservices-go-common/trace/otel"
 )
 
 type ProductController struct {

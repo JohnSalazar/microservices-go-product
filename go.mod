@@ -3,11 +3,11 @@ module product
 go 1.20
 
 require (
+	github.com/JohnSalazar/microservices-go-common v0.0.0-20230612135818-acdb75f09cf2
 	github.com/RediSearch/redisearch-go v1.1.1
 	github.com/goccy/go-json v0.9.6
 	github.com/hashicorp/consul/api v1.20.0
 	github.com/nats-io/nats.go v1.13.1-0.20220308171302-2f2f6968e98d
-	github.com/oceano-dev/microservices-go-common v1.0.1-0.20230531194233-8c3f0ae4645d
 )
 
 require (

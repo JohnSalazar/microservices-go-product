@@ -9,10 +9,10 @@ import (
 	"sync"
 	"time"
 
-	common_helpers "github.com/oceano-dev/microservices-go-common/helpers"
-	common_service "github.com/oceano-dev/microservices-go-common/services"
+	common_helpers "github.com/JohnSalazar/microservices-go-common/helpers"
+	common_service "github.com/JohnSalazar/microservices-go-common/services"
 
-	trace "github.com/oceano-dev/microservices-go-common/trace/otel"
+	trace "github.com/JohnSalazar/microservices-go-common/trace/otel"
 )
 
 type ProductReloadCacheTask struct {

@@ -12,10 +12,10 @@ import (
 
 	command "product/src/application/commands/store"
 
+	common_nats "github.com/JohnSalazar/microservices-go-common/nats"
+	common_service "github.com/JohnSalazar/microservices-go-common/services"
+	trace "github.com/JohnSalazar/microservices-go-common/trace/otel"
 	"github.com/google/uuid"
-	common_nats "github.com/oceano-dev/microservices-go-common/nats"
-	common_service "github.com/oceano-dev/microservices-go-common/services"
-	trace "github.com/oceano-dev/microservices-go-common/trace/otel"
 )
 
 type VerifyStoreTask interface {

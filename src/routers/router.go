@@ -4,13 +4,13 @@ import (
 	"fmt"
 	"product/src/controllers"
 
+	"github.com/JohnSalazar/microservices-go-common/config"
+	"github.com/JohnSalazar/microservices-go-common/middlewares"
 	"github.com/gin-contrib/location"
 	"github.com/gin-gonic/gin"
-	"github.com/oceano-dev/microservices-go-common/config"
-	"github.com/oceano-dev/microservices-go-common/middlewares"
 	"go.opentelemetry.io/contrib/instrumentation/github.com/gin-gonic/gin/otelgin"
 
-	common_service "github.com/oceano-dev/microservices-go-common/services"
+	common_service "github.com/JohnSalazar/microservices-go-common/services"
 )
 
 type Router struct {

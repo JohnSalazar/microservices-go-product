@@ -19,9 +19,9 @@ import (
 	"github.com/goccy/go-json"
 	"github.com/google/uuid"
 
-	common_models "github.com/oceano-dev/microservices-go-common/models"
-	common_nats "github.com/oceano-dev/microservices-go-common/nats"
-	common_validator "github.com/oceano-dev/microservices-go-common/validators"
+	common_models "github.com/JohnSalazar/microservices-go-common/models"
+	common_nats "github.com/JohnSalazar/microservices-go-common/nats"
+	common_validator "github.com/JohnSalazar/microservices-go-common/validators"
 )
 
 type StoreCommandHandler struct {
